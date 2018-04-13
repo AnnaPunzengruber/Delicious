@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheet/Stylesheet.css">
+</head>
+<body id="Registrieren">
+
+    <div class="container">
+        <form class="form-signin">
+            <a href="./index.html"><h2 class="mb-3 text-center">Delicious</h2></a>
+            <h4 class="centered">Registrieren</h4>
+            <label for="inputEmail" class="sr-only">E-Mail</label>
+            <input type="email" id="RegistrierenEmail" class="form-control" placeholder="E-Mail" required autofocus> <!-- data-toggle="popover" title="Email" data-content="Bitte geben Sie eine Email-Adresse ein" -->
+            <label for="inputPassword" class="sr-only">Passwort</label>
+            <input type="password" id="RegistrierenPassword" class="form-control middle" placeholder="Passwort" required>
+            <label for="inputPasswordAgain" class="sr-only">Passwort nochmal eingeben</label>
+            <input type="password" id="RegistrierenPasswordAgain" class="form-control last" placeholder="Passwort nochmal eingeben" required data-toggle="popover" title="Passwort" data-content="Die Passwörter die Sie eingegeben haben stimmen nicht überein">
+            <button class="btn btn-lg btn-info btn-block" id="RegistrierenButton">Registrieren</button> <!--<a href="./MeineZutaten.html"></a>      type="submit" -->
+            <p class="text-center my-3 footer">Du hast schon ein Konto? <a href="./Anmelden.html" class="text-info">Melde dich an.</a></p>
+        </form>
+    </div>
+    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascripts/basic.js"></script>
+</body>
+</html>

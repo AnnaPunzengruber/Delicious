@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Stylesheet.css">
+</head>
+<body id="Anmelden">
+
+    <div class="container" >
+        <form class="form-signin" > <!-- action="./MeineRezepte.html" method="post" -->
+            <a href="./index.html"><h2 class="mb-3 text-center">Delicious</h2></a>
+            <h4 class="centered">Anmelden</h4>
+            <label for="inputEmail" class="sr-only">E-Mail</label>
+            <input type="email" id="AnmeldenEmail" class="form-control" placeholder="E-Mail" required autofocus>
+            <label for="inputPassword" class="sr-only">Passwort</label>
+            <input type="password" id="AnmeldenPassword" class="form-control last" placeholder="Passwort" required>
+
+            <button class="btn btn-lg btn-info btn-block" id="AnmeldenButton"><a href="./MeineRezepte.html">Anmelden</a></button> <!-- type="submit" -->
+            <p class="text-center my-3 footer">Du hast kein Konto? <a href="./Registrieren.html" class="text-info">Registrieren.</a></p>
+        </form>
+    </div>
+    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascripts/basic.js"></script>
+</body>
+</html>

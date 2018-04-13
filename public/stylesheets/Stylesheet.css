@@ -1,0 +1,145 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+}
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+a,a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.Heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+.centered {
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.section{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height:100%;
+}
+
+.footer {
+    font-size: 12px;
+}
+
+/************INDEX**************/
+
+#Welcome{
+    background-image: url("./../Images/Delicious_StartpageBG_4.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+#Title{
+    font-family:  'Great Vibes', cursive;
+    font-size: 100px;
+    color: #FFF;
+    padding-top: 15%;
+}
+
+
+#WebsiteInfo{
+    background-color: #FFF;
+}
+
+#Footer{
+    width: 100%;
+    height: 10%;
+}
+
+
+/*******REGISTRIEREN & ANMELDEN******/
+#Registrieren, #Anmelden{
+    background-image: url("./../Images/Delicious_StartpageBG_4.jpg");
+    background-size: cover;
+    height: 100%;
+    color:#FFF;
+    padding-top: 100px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin .middle{
+    margin-bottom: -2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-signin .last {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+/************REZEPTE**************/
+.dropdown-menu .active {
+    background-color: #17a2b8;
+}
+
+.card{
+    color: #000;
+}
+.card:hover{
+    border: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/************ZUTATEN**************/
+.List .quantity{
+    width: 50px;
+}
+
+.ListContent{
+    margin-bottom: 0px;
+}

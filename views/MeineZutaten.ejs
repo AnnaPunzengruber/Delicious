@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Stylesheet.css">
+</head>
+<body id="MeineZutaten">
+        <nav class="navbar navbar-expand-md navbar-dark bg-info text-white">
+            <a class="navbar-brand Heading" href="./index.html">Delicious</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./AlleRezepte.html">Alle Rezepte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./MeineRezepte.html">Meine Rezepte</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./MeineZutaten.html">Meine Zutaten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Abmelden</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+          
+    <div class="container">
+        <h2 class="text-center my-3">Meine Zutaten</h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="font-weight-bold">Meine Zutaten</h4>
+                <ul class="list-group List" id="Zutaten">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="ListContent">Eier</p>
+                            <input type="number" class="quantity ml-auto" name="quantity" min="1" width="20px">
+                            <span class="fas fa-times my-auto ml-2"></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="ListContent">Mehl</p>
+                            <input type="number" class="quantity ml-auto" name="quantity" min="1" width="20px">
+                            <span class="fas fa-times my-auto ml-2"></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="ListContent">Zucker</p>
+                            <input type="number" class="quantity ml-auto" name="quantity" min="1" width="20px">
+                            <span class="fas fa-times my-auto ml-2"></span>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-info my-3" data-toggle="modal" data-target="#ZutatHinzufügenModal">
+                    Zutat hinzufügen
+                </button>
+
+                <div class="modal fade" id="ZutatHinzufügenModal" tabindex="-1" role="dialog" aria-labelledby="ZutatHinzufügenModalLable" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ZutatHinzufügenModalLable">Zutat hinzufügen</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+                            <button type="button" class="btn btn-info">Hinzufügen</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="font-weight-bold">Meine Einkaufsliste</h4>
+                <ul class="list-group List" id="Einkaufsliste">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="ListContent">Backpulver</p>
+                            <input type="number" class="quantity ml-auto" name="quantity" min="1" width="20px">
+                            <span class="fas fa-times my-auto ml-2"></span>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <p class="ListContent">Schokolade</p>
+                            <input type="number" class="quantity ml-auto" name="quantity" min="1" width="20px">
+                            <span class="fas fa-times my-auto ml-2"></span>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-success my-3" data-toggle="modal" data-target="#EinkaufslisteHinzufügenModal">
+                    Zur Liste hinzufügen
+                </button>
+
+                <div class="modal fade" id="EinkaufslisteHinzufügenModal" tabindex="-1" role="dialog" aria-labelledby="EinkaufslisteHinzufügenModalLable" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="EinkaufslisteHinzufügenModalLable">Zutat zur Einkaufliste hinzufügen</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Abbrechen</button>
+                            <button type="button" class="btn btn-success">Hinzufügen</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Javascripts/basic.js"></script>
+</body>
+</html>
